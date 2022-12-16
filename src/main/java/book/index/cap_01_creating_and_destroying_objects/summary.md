@@ -36,3 +36,20 @@
   - newInstance &rarr; Array.newInstance(classObject, len)
   - getType  &rarr; Files.getFileStore(path)
   - type
+
+#### Item 02: Builder instead of constructors
+
+- When to use it ?
+  - when you have too many parameters so static method factory not scale
+  - when you want your class to be inmutable
+  - when you want to clarify the sintax
+- Why to use it ?
+  - the JavaBean pattern that uses an empty constructor and a lot of setters can break the inmmutability
+- Advantages
+  - clear, concise
+  - the object result is inmutable
+- Disadvantages
+  - 
+- Examples
+  - in code
+
