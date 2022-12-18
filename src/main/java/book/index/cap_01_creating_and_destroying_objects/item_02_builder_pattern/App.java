@@ -10,7 +10,7 @@ public class App {
       .calories(1)
       .fat(12)
       .build();
-    
+
     log.info(obj.toString());
   }
 }

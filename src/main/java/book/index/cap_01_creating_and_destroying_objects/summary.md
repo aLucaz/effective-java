@@ -49,7 +49,8 @@
   - clear, concise
   - the object result is inmutable
 - Disadvantages
-  - 
+  - siempre se tiene que crear el builder para crear un objeto
+  - puede llegar a ser un problema en apps de performance critico
 - Examples
   - in code
 
