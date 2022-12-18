@@ -54,3 +54,20 @@
 - Examples
   - in code
 
+#### Item 03: Enforce the singleton property
+
+- When to use it ?
+  - cuando se requiere hacer uso del patron singleton
+- Advantages
+  - se tienen varias formas recomendadas de aplicar el patron
+    - public field
+      - se hace mas evidente que la clase es singleton
+    - static factory
+      - mas flexible que el anterior
+      - el comportamiento puede cambiar, crear un objeto cada vez que se llama al metodo
+    - usar enum con un unico field
+      - es la mejor forma de aplicar singleton, pero tiene limitantes 
+      - no se puede usar en casos de herencia
+- Notes
+  - para hacer que una clase singleton sea serializable se tien que agregar 
+    - un metodo readResolve
