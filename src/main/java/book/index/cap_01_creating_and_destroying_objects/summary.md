@@ -71,3 +71,17 @@
 - Notes
   - para hacer que una clase singleton sea serializable se tien que agregar 
     - un metodo readResolve
+
+#### Item 04: Enforce noninstantiability with a private constructor
+
+- grouping static methods and fields in a class
+  - when is a good option?
+    - can be used to group related methods on primitive values or arrays
+    - can be used in final classes
+    - when instantiating could be nonsensical
+  - whats the error?
+    - java creates a default empty constructor
+    - its an error to have this classes as instantiable
+    - the class is accessible from outside
+  - How correct it?
+    - use a private constructor to ensure noone can create an object of that class
